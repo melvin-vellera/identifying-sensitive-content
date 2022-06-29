@@ -1,4 +1,5 @@
 
+
 # identifying-sensitive-content
  
 
@@ -24,7 +25,7 @@ Removing the stop words: Removed the stop words such as is, am, and etc, this he
 ### <span style="color:blue">Lemmatizing: </span>
 Lemmatizing brings different forms of the word into one form, so that they are treated as a same word. For example words such as focussed, focussing, focuses, focus will all be lemmatized as same word.This is an important step in the preprocessing of the textual data.
 Tokenizing: We need to tokenize the text so as to convert the text into categorical variables. This can be done in multiple ways. One of the ways is doing word tokenisation or sub word tokenisation. For LSTM we used work tokenizing where as for BERT we used the in built tokenizer. We removed the infrequently occurring words in the corpus to simplify training.
-
+<img width="1027" alt="clean_text" src="https://user-images.githubusercontent.com/8666530/176561266-ffed1590-6ace-4da9-afcc-b1d37d715214.png">
 ### <span style="color:blue">Encoding: </span>
 We created a dictionary mapping all unique tokens to numbers and encoded the comments with the corresponding number for each token in the comment. This step is not required for BERT as we used pretrained embeddings for tokens.
 
