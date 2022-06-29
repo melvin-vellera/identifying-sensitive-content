@@ -1,3 +1,4 @@
+
 # identifying-sensitive-content
  
 
@@ -32,6 +33,7 @@ We created a dictionary mapping all unique tokens to numbers and encoded the com
 To achieve this we made all the sequences to be of length 200 by padding zeros in the front for comments that have fewer tokens.
 
 ### <span style="color:blue">Class imbalance Handling:</span>
+<img width="606" alt="label frequency" src="https://user-images.githubusercontent.com/8666530/176560642-f5beee2d-45f3-4766-b512-456b7bb73eb6.png">
  The classes are heavily imbalanced with clean comments forming the majority percentage of all comments. We handled it in two ways.
 One is by giving weights to the loss function, weighing the infrequent classes with higher weights. Other method is using a macro F1 score as a metric. Macro F1 score calculates the F1 score for each class individually and then takes an average of all such individual scores. This helps in giving equal weights to the classes.
 We compared the performance of our models with and with out using the weights. 
