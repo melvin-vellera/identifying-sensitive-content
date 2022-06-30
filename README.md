@@ -9,7 +9,7 @@ Today a large part of our interactions with the world are done online. Whether i
 
 
 ### <span style="color:blue">What we did:</span>
-We built multi-label classification models using LSTM and Transformer architectures (BERT, RoBERTa) and trained it on the training data.
+We built multi-label classification models using LSTM and Transformer architectures (BERT, RoBERTa) and trained it on the training data.  
 We experimented with both pretrained embeddings and initialising new embeddings.
 Used the validation set for hyperparameter tuning and model selection.
 Reported the metrics on a test set as generalisable metrics
@@ -44,3 +44,11 @@ We compared the performance of our models with and without using the weights.
 
 ### <span style="color:blue">Performance:</span>
 Using macro f1 score as a metric we chose the BERT model without using class weights as the best performing model. On the test data set this gave a macro f1 score 0.62, micro f1 score of 0.69 and an accuracy score of 0.88.
+
+### <span style="color:blue">Links:</span>
+Notebooks:  
+[LSTM](LSTM.ipynb)   
+[Transformer](LSTM.ipynb)   
+<br>
+Slides:  
+[Identifying Sensitive Content](<Identifying Sensitive Content.pptx>)
