@@ -4,6 +4,7 @@
  
 
 ### <span style="color:blue">Introduction:</span>
+<img src="https://user-images.githubusercontent.com/8078786/176565578-8cc3a91a-1c7e-40f8-be28-868d03c93bc2.png" width="600">
 Today a large part of our interactions with the world are done online. Whether it is zoom calls, tweets, comments on instagram and facebook. Technology made it super easy for everyone to express their opinions and engage in discussions online. But, these online interactions also bring their own challenges. The anonymity of online conversations makes it easy for people to post insensitive and inappropriate comments. Such comments can spoil the dialogue and cause emotional distress. The online platforms are constantly striving to keep the discussions healthy by flagging such content and removing it. Here we aimed to train a machine learning model to label a comment based on its contents. A comment can have multiple labels: toxic, severe_toxic, obscene, threat, insult, identity_hate. Any comment which is not flagged with any of these labels is a clean comment.
 
 
@@ -30,7 +31,8 @@ Tokenizing: We need to tokenize the text so as to convert the text into categori
 We created a dictionary mapping all unique tokens to numbers and encoded the comments with the corresponding number for each token in the comment.
 
 ### <span style="color:blue">Padding:</span>
- We chose 200 as the maximum sequence length based on the length of the comments. So the sequences are truncated if they have more than 200 tokens. It is important to maintain a fixed length for each sequence so that they can be batched together.
+![sequence_length](https://user-images.githubusercontent.com/8078786/176564919-615b75d5-6095-4bcb-8369-0305fcea3e5e.png)  
+We chose 200 as the maximum sequence length based on the length of the comments. So the sequences are truncated if they have more than 200 tokens. It is important to maintain a fixed length for each sequence so that they can be batched together.
 To achieve this we made all the sequences to be of length 200 by padding zeros in the front for comments that have fewer tokens.
 
 ### <span style="color:blue">Class imbalance Handling:</span>
