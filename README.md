@@ -4,7 +4,7 @@
  
 
 ### <span style="color:blue">Introduction:</span>
-<img src="https://user-images.githubusercontent.com/8078786/176565578-8cc3a91a-1c7e-40f8-be28-868d03c93bc2.png" width="600">
+<img src="https://user-images.githubusercontent.com/8078786/176565578-8cc3a91a-1c7e-40f8-be28-868d03c93bc2.png" width="800">
 Today a large part of our interactions with the world are done online. Whether it is zoom calls, tweets, comments on instagram and facebook. Technology made it super easy for everyone to express their opinions and engage in discussions online. But, these online interactions also bring their own challenges. The anonymity of online conversations makes it easy for people to post insensitive and inappropriate comments. Such comments can spoil the dialogue and cause emotional distress. The online platforms are constantly striving to keep the discussions healthy by flagging such content and removing it. Here we aimed to train a machine learning model to label a comment based on its contents. A comment can have multiple labels: toxic, severe_toxic, obscene, threat, insult, identity_hate. Any comment which is not flagged with any of these labels is a clean comment.
 
 
