@@ -41,4 +41,4 @@ The classes are heavily imbalanced with clean comments forming the majority perc
 One is by giving weights to the loss function, weighing the infrequent classes with higher weights. Other method is using a macro F1 score as a metric. Macro F1 score calculates the F1 score for each class individually and then takes an average of all such individual scores. This helps in giving equal weights to the classes.
 We compared the performance of our models with and without using the weights. 
 ### <span style="color:blue">Performance:</span>
-
+Using macro f1 score as a metric we chose the BERT model without using class weights as the best performing model. On the test data set this gave a macro f1 score 0.62, micro f1 score of 0.69 and an accuracy score of 0.88.
